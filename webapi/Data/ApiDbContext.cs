@@ -5,7 +5,7 @@ namespace webapi.Data
 {
     public class ApiDbContext:DbContext
     {
-        public ApiDbContext(DbContextOptions dbContextoptions):base(dbContextoptions)
+        public ApiDbContext(DbContextOptions<ApiDbContext> dbContextoptions):base(dbContextoptions)
         {
         }
         public DbSet<Region> Regions { get; set; }
