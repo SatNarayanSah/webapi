@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace webapi.Controllers
 {
@@ -8,15 +7,16 @@ namespace webapi.Controllers
     public class StudentController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GerAllStudentds()
+        public IActionResult GetAllStudents()
         {
-            string[] studentName = new string[] {"John Doe",
+            string[] studentName = {
+                "John Doe",
                 "Jane Smith",
                 "Alice Johnson",
                 "Bob Brown"
             };
+
             return Ok(studentName);
         }
     }
 }
-

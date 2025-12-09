@@ -5,5 +5,5 @@ Accept: application/json
 
 ###
 
-GET {{webapi_HostAddress}}/Student
+GET {{webapi_HostAddress}}/api/student
 Accept: application/json
